@@ -1,6 +1,12 @@
 # study-helm
 KubernetesのHelmの学習リポジトリ
 
+## helmリポジトリ
+
+```sh
+helm repo add study-helm https://shota-takaoka.github.io/study-helm/
+```
+
 ## Usage
 
 ### インストール
