@@ -1,0 +1,1 @@
+helm install study-helm ./mychart
