@@ -3,6 +3,8 @@ KubernetesのHelmの学習リポジトリ
 
 ## helmリポジトリ
 
+以下の手順でお試しデプロイ可能
+
 ```sh
 helm repo add study-helm https://shota-takaoka.github.io/study-helm/
 ```
