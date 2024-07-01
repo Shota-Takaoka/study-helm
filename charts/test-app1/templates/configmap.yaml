@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: {{ .Release.Name }}-configmap
-data:
-  myvalue: {{ .Values.myvalue }}
-  containernum:  !string {{ .Values.testapp1.container.num }}
-  containerport: !string {{ .Values.testapp1.container.port }}

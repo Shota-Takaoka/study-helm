@@ -1,32 +1,28 @@
 # study-helm
 KubernetesのHelmの学習リポジトリ
 
-## Usage
+## helmリポジトリ
 
-### インストール
-
-```sh
-./install
-```
-
-### アンインストール
+以下の手順でお試しデプロイ可能
 
 ```sh
-./uninstall
-```
+# helmリポジトリの追加
+helm repo add study-helm https://shota-takaoka.github.io/study-helm/
 
-### リクエスト
+# helmリポジトリ内のチャート内の一覧
+helm search repo study-helm
 
-```sh
-curl hello.info:30080/hello
-```
+# 追加したhelmリポジトリからチャートをインストールする
+helm install test-app1 study-helm/test-app1
 
-## Helmコマンド
+# ワーカーノードのINTERNAL-IPを確認
+kubectl get node -o wide
 
-### Helmチャートの作成
+# サーバーが起動しているかを確認
+curl [ワーカーノードのINTERNAL-IP]:31080
 
-```sh
-helm create charts/[作成するチャート名]
+# チャートのアンインストール
+helm uninstall test-app1 
 ```
 
 

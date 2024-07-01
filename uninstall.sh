@@ -1,1 +1,0 @@
-helm uninstall study-helm

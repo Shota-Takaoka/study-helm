@@ -1,7 +1,0 @@
-testapp1:
-  container:
-    num: 2
-    port: 8080
-    nodeport: 31080
-
-myvalue: "Update My Value"
